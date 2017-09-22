@@ -180,5 +180,23 @@ namespace CSharp.Curry
         public static Func<TIn1, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TOut> f, _ n, TIn2 in2, TIn3 in3, TIn4 in4)
             => in1
             => f(in1, in2, in3, in4);
+        // _ n nog toevoegen
+        public static Func<TIn1, TIn2, TIn3, TIn4, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TOut>(this Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn4, TOut>>>> f)
+            => (in1, in2, in3, in4)
+            => f(in1)(in2)(in3)(in4);
+        public static Func<TIn2, TIn3, TIn4, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TOut>(this Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn4, TOut>>>> f, TIn1 in1)
+            => (in2, in3, in4)
+            => f(in1)(in2)(in3)(in4);
+        public static Func<TIn1, TIn3, TIn4, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TOut>(this Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn4, TOut>>>> f, TIn2 in2)
+            => (in1, in3, in4)
+            => f(in1)(in2)(in3)(in4);
+        public static Func<TIn1, TIn2, TIn4, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TOut>(this Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn4, TOut>>>> f, TIn3 in3)
+            => (in1, in2, in4)
+            => f(in1)(in2)(in3)(in4);
+        public static Func<TIn1, TIn2, TIn3, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TOut>(this Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn4, TOut>>>> f, TIn4 in4)
+            => (in1, in2, in3)
+            => f(in1)(in2)(in3)(in4);
+
+        // nog 2,3 ingevilt toevoegen
     }
 }
