@@ -4,3 +4,6 @@
 
 /CSharp.Curry/bin/Debug
 /CSharp.Curry/obj/Debug
+/CSharp.Curry.Test/bin/Debug
+/CSharp.Curry.Test/obj/Debug
+/packages

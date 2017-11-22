@@ -18,7 +18,7 @@ namespace CSharp.Curry
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn3, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, _ n1, _ n2, _ n3)
+        public static Func<TIn2, Func<TIn3, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, _ n3, _ n4, _ n5)
             => in2
             => in3
             => in4
@@ -30,13 +30,13 @@ namespace CSharp.Curry
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2)
+        public static Func<TIn1, Func<TIn3, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2)
             => in1
             => in3
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, _ n1, _ n2, _ n3)
+        public static Func<TIn1, Func<TIn3, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, _ n3, _ n4, _ n5)
             => in1
             => in3
             => in4
@@ -49,13 +49,13 @@ namespace CSharp.Curry
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, TIn3 in3)
+        public static Func<TIn1, Func<TIn2, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, TIn3 in3)
             => in1
             => in2
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, TIn3 in3, _ n2, _ n3)
+        public static Func<TIn1, Func<TIn2, Func<TIn4, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, TIn3 in3, _ n4, _ n5)
             => in1
             => in2
             => in4
@@ -67,13 +67,13 @@ namespace CSharp.Curry
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, _ n2, TIn4 in4)
+        public static Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, _ n3, TIn4 in4)
             => in1
             => in2
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, _ n2, TIn4 in4, _ n3)
+        public static Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn5, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, _ n3, TIn4 in4, _ n5)
             => in1
             => in2
             => in3
@@ -85,7 +85,7 @@ namespace CSharp.Curry
             => in3
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn4, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, _ n2, _ n3, TIn5 in5)
+        public static Func<TIn1, Func<TIn2, Func<TIn3, Func<TIn4, TOut>>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, _ n3, _ n4, TIn5 in5)
             => in1
             => in2
             => in3
@@ -98,7 +98,7 @@ namespace CSharp.Curry
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn3, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n, _ n1, _ n2)
+        public static Func<TIn3, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n3, _ n4, _ n5)
             => in3
             => in4
             => in5
@@ -108,12 +108,12 @@ namespace CSharp.Curry
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, TIn3 in3)
+        public static Func<TIn2, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, TIn3 in3)
             => in2
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, TIn3 in3, _ n1, _ n2)
+        public static Func<TIn2, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, TIn3 in3, _ n4, _ n5)
             => in2
             => in4
             => in5
@@ -123,12 +123,12 @@ namespace CSharp.Curry
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n1, _ n2, TIn4 in4)
+        public static Func<TIn2, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, _ n3, TIn4 in4)
             => in2
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n1, _ n2, TIn4 in4, _ n)
+        public static Func<TIn2, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, _ n3, TIn4 in4, _ n5)
             => in2
             => in3
             => in5
@@ -138,7 +138,7 @@ namespace CSharp.Curry
             => in3
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn3, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, _ n1, _ n2, TIn5 in5)
+        public static Func<TIn2, Func<TIn3, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, _ n3, _ n4, TIn5 in5)
             => in2
             => in3
             => in4
@@ -149,12 +149,12 @@ namespace CSharp.Curry
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn3 in3)
+        public static Func<TIn1, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn3 in3)
             => in1
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn3 in3, _ n1, _ n2)
+        public static Func<TIn1, Func<TIn4, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn3 in3, _ n4, _ n5)
             => in1
             => in4
             => in5
@@ -164,17 +164,17 @@ namespace CSharp.Curry
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn4 in4)
+        public static Func<TIn1, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn4 in4)
             => in1
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, _ n1, TIn4 in4)
+        public static Func<TIn1, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, _ n3, TIn4 in4)
             => in1
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, _ n1, TIn4 in4, _ n2)
+        public static Func<TIn1, Func<TIn3, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, _ n3, TIn4 in4, _ n5)
             => in1
             => in3
             => in5
@@ -184,12 +184,12 @@ namespace CSharp.Curry
             => in3
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn5 in5)
+        public static Func<TIn1, Func<TIn3, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn5 in5)
             => in1
             => in3
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, _ n1, _ n2, TIn5 in5)
+        public static Func<TIn1, Func<TIn3, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, _ n3, _ n4, TIn5 in5)
             => in1
             => in3
             => in4
@@ -199,12 +199,12 @@ namespace CSharp.Curry
             => in2
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, TIn3 in3, TIn4 in4)
+        public static Func<TIn1, Func<TIn2, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, TIn3 in3, TIn4 in4)
             => in1
             => in2
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, TIn3 in3, TIn4 in4, _ n2)
+        public static Func<TIn1, Func<TIn2, Func<TIn5, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, TIn3 in3, TIn4 in4, _ n5)
             => in1
             => in2
             => in5
@@ -214,12 +214,12 @@ namespace CSharp.Curry
             => in2
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, TIn3 in3, TIn5 in5)
+        public static Func<TIn1, Func<TIn2, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, TIn3 in3, TIn5 in5)
             => in1
             => in2
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, TIn3 in3, _ n2, TIn5 in5)
+        public static Func<TIn1, Func<TIn2, Func<TIn4, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, TIn3 in3, _ n4, TIn5 in5)
             => in1
             => in2
             => in4
@@ -230,7 +230,7 @@ namespace CSharp.Curry
             => in3
             => f(in1, in2, in3, in4, in5);
 
-        public static Func<TIn1, Func<TIn2, Func<TIn3, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, _ n2, TIn4 in4, TIn5 in5)
+        public static Func<TIn1, Func<TIn2, Func<TIn3, TOut>>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, _ n3, TIn4 in4, TIn5 in5)
             => in1
             => in2
             => in3
@@ -242,7 +242,7 @@ namespace CSharp.Curry
             => f(in1, in2, in3, in4, in5);
 
 
-        public static Func<TIn4, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn3 in3, _ n, _ n1)
+        public static Func<TIn4, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn3 in3, _ n4, _ n5)
             => in4
             => in5
             => f(in1, in2, in3, in4, in5);
@@ -252,12 +252,12 @@ namespace CSharp.Curry
             => in5
             => f(in1, in2, in3, in4, in5);
 
-        public static Func<TIn3, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n, TIn4 in4)
+        public static Func<TIn3, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n3, TIn4 in4)
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
 
-        public static Func<TIn3, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n, TIn4 in4, _ n1)
+        public static Func<TIn3, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n3, TIn4 in4, _ n5)
             => in3
             => in5
             => f(in1, in2, in3, in4, in5);
@@ -265,7 +265,7 @@ namespace CSharp.Curry
             => in3
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn3, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n, _ n1, TIn5 in5)
+        public static Func<TIn3, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n3, _ n4, TIn5 in5)
             => in3
             => in4
             => f(in1, in2, in3, in4, in5);
@@ -274,11 +274,11 @@ namespace CSharp.Curry
             => in2
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, TIn3 in3, TIn4 in4)
+        public static Func<TIn2, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, TIn3 in3, TIn4 in4)
             => in2
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, TIn3 in3, TIn4 in4, _ n1)
+        public static Func<TIn2, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, TIn3 in3, TIn4 in4, _ n5)
             => in2
             => in5
             => f(in1, in2, in3, in4, in5);
@@ -286,11 +286,11 @@ namespace CSharp.Curry
             => in2
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, TIn3 in3, TIn5 in5)
+        public static Func<TIn2, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, TIn3 in3, TIn5 in5)
             => in2
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, TIn3 in3, _ n1, TIn5 in5)
+        public static Func<TIn2, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, TIn3 in3, _ n4, TIn5 in5)
             => in2
             => in4
             => f(in1, in2, in3, in4, in5);
@@ -298,7 +298,7 @@ namespace CSharp.Curry
             => in2
             => in3
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, Func<TIn3, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, _ n1, TIn4 in4, TIn5 in5)
+        public static Func<TIn2, Func<TIn3, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, _ n3, TIn4 in4, TIn5 in5)
             => in2
             => in3
             => f(in1, in2, in3, in4, in5);
@@ -307,11 +307,11 @@ namespace CSharp.Curry
             => in1
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn3 in3, TIn4 in4)
+        public static Func<TIn1, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn3 in3, TIn4 in4)
             => in1
             => in5
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn3 in3, TIn4 in4, _ n1)
+        public static Func<TIn1, Func<TIn5, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn3 in3, TIn4 in4, _ n5)
             => in1
             => in5
             => f(in1, in2, in3, in4, in5);
@@ -319,11 +319,11 @@ namespace CSharp.Curry
             => in1
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn3 in3, TIn5 in5)
+        public static Func<TIn1, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn3 in3, TIn5 in5)
             => in1
             => in4
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn3 in3, _ n1, TIn5 in5)
+        public static Func<TIn1, Func<TIn4, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn3 in3, _ n4, TIn5 in5)
             => in1
             => in4
             => f(in1, in2, in3, in4, in5);
@@ -331,11 +331,11 @@ namespace CSharp.Curry
             => in1
             => in3
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn4 in4, TIn5 in5)
+        public static Func<TIn1, Func<TIn3, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn4 in4, TIn5 in5)
             => in1
             => in3
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn3, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, _ n1, TIn4 in4, TIn5 in5)
+        public static Func<TIn1, Func<TIn3, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, _ n3, TIn4 in4, TIn5 in5)
             => in1
             => in3
             => f(in1, in2, in3, in4, in5);
@@ -343,7 +343,7 @@ namespace CSharp.Curry
             => in1
             => in2
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, Func<TIn2, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, _ n1, TIn3 in3, TIn4 in4, TIn5 in5)
+        public static Func<TIn1, Func<TIn2, TOut>> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, _ n2, TIn3 in3, TIn4 in4, TIn5 in5)
             => in1
             => in2
             => f(in1, in2, in3, in4, in5);
@@ -352,31 +352,31 @@ namespace CSharp.Curry
         public static Func<TIn5, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn3 in3, TIn4 in4)
             => in5
             => f(in1, in2, in3, in4, in5);
+        public static Func<TIn5, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn3 in3, TIn4 in4, _ n5)
+            => in5
+            => f(in1, in2, in3, in4, in5);
         public static Func<TIn4, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn3 in3, TIn5 in5)
+            => in4
+            => f(in1, in2, in3, in4, in5);
+        public static Func<TIn4, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn3 in3, _ n4, TIn5 in5)
             => in4
             => f(in1, in2, in3, in4, in5);
         public static Func<TIn3, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn4 in4, TIn5 in5)
             => in3
             => f(in1, in2, in3, in4, in5);
+        public static Func<TIn3, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n3, TIn4 in4, TIn5 in5)
+            => in3
+            => f(in1, in2, in3, in4, in5);
         public static Func<TIn2, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn3 in3, TIn4 in4, TIn5 in5)
+            => in2
+            => f(in1, in2, in3, in4, in5);
+        public static Func<TIn2, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n2, TIn3 in3, TIn4 in4, TIn5 in5)
             => in2
             => f(in1, in2, in3, in4, in5);
         public static Func<TIn1, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn2 in2, TIn3 in3, TIn4 in4, TIn5 in5)
             => in1
             => f(in1, in2, in3, in4, in5);
-        public static Func<TIn5, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn3 in3, TIn4 in4, _ n)
-            => in5
-            => f(in1, in2, in3, in4, in5);
-        public static Func<TIn4, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, TIn3 in3, _ n, TIn5 in5)
-            => in4
-            => f(in1, in2, in3, in4, in5);
-        public static Func<TIn3, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, TIn2 in2, _ n, TIn4 in4, TIn5 in5)
-            => in3
-            => f(in1, in2, in3, in4, in5);
-        public static Func<TIn2, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, TIn1 in1, _ n, TIn3 in3, TIn4 in4, TIn5 in5)
-            => in2
-            => f(in1, in2, in3, in4, in5);
-        public static Func<TIn1, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n, TIn2 in2, TIn3 in3, TIn4 in4, TIn5 in5)
+        public static Func<TIn1, TOut> Curry<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>(this Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut> f, _ n1, TIn2 in2, TIn3 in3, TIn4 in4, TIn5 in5)
             => in1
             => f(in1, in2, in3, in4, in5);
     }

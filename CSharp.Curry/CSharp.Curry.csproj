@@ -44,6 +44,8 @@
     <Compile Include="Currying3.cs" />
     <Compile Include="Currying4.cs" />
     <Compile Include="Currying5.cs" />
+    <Compile Include="Flat\Currying2.cs" />
+    <Compile Include="Flat\Currying3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="_.cs" />
   </ItemGroup>
