@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ShooldCurry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Curry_Readable_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
