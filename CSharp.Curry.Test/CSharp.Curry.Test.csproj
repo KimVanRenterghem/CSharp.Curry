@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharp.Curry\CSharp.Curry.csproj">
-      <Project>{be5544fc-cd14-4ba9-9ddc-77c466d383d9}</Project>
+      <Project>{70b58937-42fc-4d50-9b44-a857449af2d4}</Project>
       <Name>CSharp.Curry</Name>
     </ProjectReference>
   </ItemGroup>

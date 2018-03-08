@@ -7,7 +7,8 @@ namespace CSharp.Curry.Test
     public class ShooldCurry
     {
 
-        private _ _;
+        private readonly _ _ = _.__;
+        
         private static int Som(int i, int v)
         {
             return i + v;
